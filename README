@@ -1,5 +1,5 @@
-Exporter::Cluster version 0.2.5
-===============================
+Exporter::Cluster README
+========================
 
 I have noticed a general trend of Perl packages growing in complexity
 as new technology is developed and Perl modules are made to interface
@@ -7,7 +7,7 @@ with these advances.  Designing and developing an interface to these
 new interfaces can be (and most likely should be) a time consuming and
 thought intensive task.  One of the hardest tasks is to use good coding
 practices of code separation in the Perl modules.  If such practices
-are followed to the extreme, the end user might have to have quite
+are followed to the extreme, the end user might have to add quite
 large 'use' list at the top of each file.  The goal of Exporter::Cluster
 is to implement a binding package that can reduce the list of closely
 associated modules down to one 'use'.  This is not a general use module
@@ -30,7 +30,7 @@ specifically work with modules that use the Exporter module.
 
 COPYRIGHT AND LICENSE
 
-Copyright (C) 2002 D. Hageman (Dracken Technologies).
+Copyright (C) 2002-2003 D. Hageman (Dracken Technologies).
 All rights reserved.
 
 This program is free software; you can redistribute it and/or modify 

@@ -18,9 +18,10 @@ package Exporter::Cluster;
 require 5.005;	## This will be the earliest version of Perl we will 
 				## consider supporting with this module.
 
+use strict;
 use warnings;
 
-$Exporter::Cluster::VERSION = "0.2.0";
+$Exporter::Cluster::VERSION = "0.30";
 
 ##==================================================================##
 ##  Function(s)                                                     ##
@@ -124,7 +125,7 @@ L<Exporter>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2002 D. Hageman (Dracken Technologies).
+Copyright (c) 2002-2003 D. Hageman (Dracken Technologies).
 All rights reserved.
 
 This program is free software; you can redistribute it and/or modify 
