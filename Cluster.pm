@@ -15,11 +15,12 @@ package Exporter::Cluster;
 ##  Libraries and Variables                                         ##
 ##==================================================================##
 
-require 5.6.0;
+require 5.005;	## This will be the earliest version of Perl we will 
+				## consider supporting with this module.
 
 use warnings;
 
-our $VERSION = "0.2.0";
+$Exporter::Cluster::VERSION = "0.2.0";
 
 ##==================================================================##
 ##  Function(s)                                                     ##
@@ -28,6 +29,8 @@ our $VERSION = "0.2.0";
 ##----------------------------------------------##
 ##  import                                      ##
 ##----------------------------------------------##
+##  Method that will be inherited by the module ##
+##  that puts Exporter::Cluster in this ISA.    ##
 ##----------------------------------------------##
 sub import
 {
@@ -70,11 +73,29 @@ __END__
 
 =head1 NAME
 
-Exporter::Cluster - Implements a 'bundled' import method for modules
+Exporter::Cluster - Extension for easy multiple module imports.
 
 =head1 SYNOPSIS
 
-use Exporter::Cluster;
+In module ModuleName.pm:
+
+ package ModuleName;
+ require Exporter::Cluster;
+
+ @ISA = qw( Exporter::Cluster );
+
+ %EXPORT_CLUSTER = ( MODULE_1 => ARGS_1,
+                     MODULE_2 => ARGS_2,
+                     ...      => ...     );
+
+
+In other files which to use ModuleName:
+
+ use ModuleName;
+
+All of the modules listed %EXPORT_CLUSTER will be available (after being
+augmented by the import argument list if any) to the module that uses 
+ModuleName.
 
 =head1 DESCRIPTION
 

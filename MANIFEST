@@ -3,4 +3,4 @@ Cluster.pm
 Makefile.PL
 MANIFEST
 README
-test.pl
+t/use.t

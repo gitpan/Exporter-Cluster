@@ -1,11 +1,13 @@
+require 5.005;			## This is the earliest version of Perl that we
+						## will consider supporting.
 use ExtUtils::MakeMaker;
-# See lib/ExtUtils/MakeMaker.pm for details of how to influence
-# the contents of the Makefile that is written.
 WriteMakefile(
-    'NAME'		=> 'Exporter::Cluster',
-    'VERSION_FROM'	=> 'Cluster.pm', # finds $VERSION
-    'PREREQ_PM'		=> {}, # e.g., Module::Name => 1.1
-    ($] >= 5.005 ?    ## Add these new keywords supported since 5.005
-      (ABSTRACT_FROM => 'Cluster.pm', # retrieve abstract from module
-       AUTHOR     => 'D. Hageman <dhageman@dracken.com>') : ()),
+    'NAME'				=> 'Exporter::Cluster',
+    'VERSION_FROM'		=> 'Cluster.pm',
+    'PREREQ_PM'			=> {},	## No additional modules are required to
+								## make Exporter::Cluster work.
+    ($] >= 5.005 ?		## We need to section this off for it to work with
+						## older versions of Perl.
+      ( ABSTRACT_FROM	=> 'Cluster.pm',
+        AUTHOR			=> 'D. Hageman <dhageman@dracken.com>') : ()),
 );

@@ -1,6 +1,11 @@
 Exporter::Cluster Revision History
 ==================================
 
+0.2.5 Sat Jul 06 15:43:52 2002
+	- Removed code dependencies that required Perl 5.6.0 to allow the 
+	  the module to work on older Perl versions.
+	- Added some more documentation.
+
 0.2.0 Wed Jun 19 00:18:55 2002
 	- First working version of Exporter::Cluster
 
