@@ -18,10 +18,9 @@ package Exporter::Cluster;
 require 5.005;	## This will be the earliest version of Perl we will 
 				## consider supporting with this module.
 
-use strict;
 use warnings;
 
-$Exporter::Cluster::VERSION = "0.30";
+$Exporter::Cluster::VERSION = "0.31";
 
 ##==================================================================##
 ##  Function(s)                                                     ##

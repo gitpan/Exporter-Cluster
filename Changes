@@ -1,6 +1,9 @@
 Exporter::Cluster Revision History
 ==================================
 
+0.31  Mon Mar 24 01:41:08 2003
+	- Silly mistake with "use strict".
+
 0.30  Sun Mar 23 21:29:09 2003
 	- Change the version numbering scheme to something that perl likes
 	  a bit more.
